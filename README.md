@@ -311,23 +311,4 @@ The sweet spot: LLM-level understanding at 1/10th to 1/50th the cost of using yo
 
 ---
 
-## Deep Dive: Sucana v6 Chat System Architecture
-
-### [`v6-chat-system-deep-dive.md`](./v6-chat-system-deep-dive.md)
-
-A complete teardown of the Sucana v6 AI chat system — the full architecture behind a conversational analytics assistant that lets users chat with their Facebook and Google Ads data.
-
-Covers:
-- End-to-end message flow (6 steps, diagram included)
-- 2-model architecture (Haiku for intent, Sonnet for analysis)
-- The complete system prompt — every section annotated with *why* it exists
-- Data fetching pipeline (4 parallel queries, pagination, aggregation)
-- RAG knowledge retrieval (pgvector similarity search)
-- Fast path for dashboard actions (skips LLM entirely)
-- Debug panel design (full observability into every request)
-- Key design decisions and tradeoffs
-- What changed in v8 (and what was lost)
-
----
-
 Built by [Vinod Sharma](https://github.com/vinodsharma10x) while building [Sucana](https://sucana.io).
